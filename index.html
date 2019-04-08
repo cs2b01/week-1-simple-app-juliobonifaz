@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+    <meta charset="UTF-8">
+    <title>Chat</title>
 </head>
-
 <body>
-Content of the document......
-</body>
 
+
+<script>
+    function login(){
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    console.log(username)
+    console.log(password)
+    if(username.value == password.value){
+        alert("son iguales");
+        }
+    }
+</script>
+
+
+    <form >
+        <table>
+            <tr>
+                <td>chat de julio 2019 </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="username" id="username"/></td>
+            </tr>
+            <tr>
+                <td><input type="password" name="password" id="password"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick=login() value="Login"/></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
 </html>
